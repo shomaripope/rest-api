@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 //connect to mongodb
-mongoose.connect('mongodb://localhost/ninjago');
+mongoose.connect('mongodb://localhost/ninjago', {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 
 app.use(bodyParser.json());
