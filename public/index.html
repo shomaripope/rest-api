@@ -33,7 +33,7 @@ var Ninjas = React.createClass({
         ninjas = ninjas.map(function(ninja, index){
             return(
                 <li key={index}>
-                    <span className={ninja.obj.avail}></span>
+                    <span className={ninja.obj.available}></span>
                     <span className="name">{ninja.obj.name}</span>
                     <span className="rank">{ninja.obj.rank}</span>
                     <span className="dist">{Math.floor(ninja.dist/1000)} km</span>
