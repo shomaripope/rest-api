@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet" />
 
 </head>
 <body>
-    <h1 class="title">NinjaGo - Shomari's REST API</h1>
+    <h1 class="title">GoSu - Shomari's REST API</h1>
     <div id="homepage">
-        <h2 class="container">Hire a ninja in your area!</h2>
+        <h2 class="container">Hire a developer in your area!</h2>
         <div id="ninjas"></div>
     </div>
 
@@ -36,7 +38,7 @@ var Ninjas = React.createClass({
                     <span className={ninja.available}></span>
                     <span className="name">{ninja.name}</span>
                     <span className="rank">{ninja.rank}</span>
-                    <span className="dist">{Math.floor(ninja.dist/1000)} km</span>
+                    <span className="dist">{Math.floor(ninja.dis/10000)} km</span>
                 </li>
             );
         });
